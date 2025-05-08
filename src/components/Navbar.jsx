@@ -21,11 +21,17 @@ const Navbar = () => {
 				}
 			</div>
 			{/* mobile link list */}
-			<div className={`w-full h-screen flex flex-col items-center justify-center bg-white fixed top-16 md:top-20 left-0 z-10 transition-all duration-300 ease-in-out ${isOpen
-					? "-translate-x-0"
-					: "translate-x-full"
+			<div className={`w-full h-screen flex flex-col items-center justify-center gap-8 font-medium text-lg bg-white fixed top-16 md:top-20 left-0 z-10 transition-all duration-300 ease-in-out ${isOpen
+				? "-translate-x-0"
+				: "translate-x-full"
 				}`}>
-				TEST
+				<a href="/" className="">Home</a>
+				<a href="/" className="">Trending</a>
+				<a href="/" className="">Most Popular</a>
+				<a href="/" className="">About</a>
+				<a href="/" className="">
+					<button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">Login</button>
+				</a>
 			</div>
 
 			{/* desktop menu */}
@@ -35,7 +41,7 @@ const Navbar = () => {
 				<a href="/" className="">Most Popular</a>
 				<a href="/" className="">About</a>
 				<a href="/" className="">
-					<button>Login</button>
+					<button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">Login</button>
 				</a>
 			</div>
 
